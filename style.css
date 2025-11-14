@@ -1,0 +1,46 @@
+ body 
+{
+font-family: Arial, Helvetica, sans-serif;
+margin: 20px;
+padding: 20px;
+text-align: center;
+}
+.box {
+      width: 80%;
+      max-width: 800px;
+      background-color:gray;
+      margin: 30px auto;
+      padding: 20px 40px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+h1,h2
+{
+color: aliceblue;
+text-decoration: underline;
+margin: 0px;
+border-bottom: 2px solid #3498db;
+padding-bottom: 5px;
+ 
+}
+.section {
+      margin-bottom: 0px;}
+      
+      
+      
+      .skills span {
+      background-color: #3498db;
+      color: #fff;
+      padding: 0px 0px;
+      border-radius: 0px;
+      margin-right: 0px;
+      display: inline-block;
+      margin-top: 0px;
+    }
+    img
+    {
+   height: 100px;
+   float: left;
+
+
+    }
