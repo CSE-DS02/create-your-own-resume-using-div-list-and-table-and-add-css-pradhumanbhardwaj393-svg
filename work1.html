@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GameVerse Store</title>
+
+<style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+    body {background: #0b0b0b; color: #fff;}
+
+    header {
+        background: #111;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 0 20px #444;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    header h1 {font-size: 2.5rem; color: #ff3e3e; text-shadow: 0 0 10px #ff3e3e;}
+
+    nav {
+        margin-top: 10px;
+    }
+    nav a {
+        color: #fff;
+        margin: 0 15px;
+        text-decoration: none;
+        font-size: 1.1rem;
+        transition: .3s;
+    }
+    nav a:hover {color: #ff3e3e;}
+
+    .hero {
+        height: 60vh;
+        background: url(futuristic-background-with-colorful-glowing-abstract-neon-lights.jpg) center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .hero h2 {
+        font-size: 3rem;
+        background: rgba(0,0,0,0.6);
+        padding: 15px 20px;
+        border-radius: 10px;
+        text-shadow: 0 0 10px red;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+        padding: 50px 0;
+    }
+    .section-title {font-size: 2rem; text-shadow: 0 0 10px #ff3e3e; margin-bottom: 20px; text-align: center;}
+
+    .store {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 30px;
+    }
+
+    .card {
+        background: #151515;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 10px #222;
+        transition: .3s;
+    }
+    .card:hover {transform: scale(1.05); box-shadow: 0 0 20px #ff3e3e;}
+
+    .card img {width: 100%; height: 160px; object-fit: cover;}
+    .card h3 {padding: 15px; font-size: 1.3rem;}
+    .card p {padding: 0 15px 15px; font-size: 0.9rem; color: #ccc;}
+    .card .price {padding: 0 15px 10px; font-size: 1.1rem; color: #ff3e3e; font-weight: bold;}
+
+    .btn {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0 15px 15px;
+        background: #ff3e3e;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: .3s;
+    }
+    .btn:hover {background: #cc1b1b;}
+    
+    footer {
+        background: #111;
+        text-align: center;
+        padding: 20px;
+        color: #aaa;
+        margin-top: 40px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>GameVerse Store</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#store">Games</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Buy Your Favorite Games Here!
+        with enjoyment of balance 
+    </h2>
+    
+</section>
+
+<div class="container">
+    <h2 id="store" class="section-title">🔥 Best Deals</h2>
+
+    <div class="store">
+
+        <div class="card">
+            <img src="God_of_War_Ragnarök_cover.jpg">
+            <h3>God of War: Ragnarök</h3>
+            <p>Epic adventures of Kratos and Atreus.</p>
+            <div class="price">$39.99</div>
+            <a class="btn" href="https://god-of-war.en.softonic.com/">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="gta v.jpg">
+            <h3>GTA V</h3>
+            <p>Action, open-world chaos, and crime.</p>
+            <div class="price">$19.99</div>
+            <a class="btn" href="https://www.rockstargames.com/gta-v">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="mortal kombat.jpg">
+            <h3>Mortal Kombat 1</h3>
+            <p>Fight, finish, and dominate your opponents.</p>
+            <div class="price">$49.99</div>
+            <a class="btn" href="https://www.mortalkombat.com/en-us/purchase">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="red dead redemption 2.jpg">
+            <h3>Red Dead Redemption 2</h3>
+            <p>A masterpiece Western action adventure.</p>
+            <div class="price">$29.99</div>
+            <a class="btn" href="https://www.playstation.com/en-in/games/red-dead-redemption-2/">Buy Now</a>
+        </div>
+
+         <div class="card">
+            <img src="monkey king.jpg">
+            <h3>Monkey king</h3>
+            <p>Epic adventures of HEROS.</p>
+            <div class="price">$39.99</div>
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.adventure.wukongforeign&hl=en_IN">Buy Now</a>
+        </div>
+
+         <div class="card">
+            <img src="velorent.jpg">
+            <h3>VALORENT</h3>
+            <p>Epic COMBAT WITH ENMY.</p>
+            <div class="price">$69.99</div>
+            <a class="btn" href="https://playvalorant.com/en-us/download/">Buy Now</a>
+        </div>
+
+         <div class="card">
+            <img src="pubg.jpg">
+            <h3>PUBG</h3>
+            <p>TEAM WORK WITH FIGHT MAKE WIN .</p>
+            <div class="price">$39.99</div>
+            <a class="btn" href="https://apps.apple.com/us/app/pubg-mobile/id1330123889">Buy Now</a>
+        </div>
+
+         <div class="card">
+            <img src="shadow fight.jpg">
+            <h3>shadow fight </h3>
+            <p>Epic adventures of shadow.</p>
+            <div class="price">$200.99</div>
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.nekki.shadowfight&hl=en_IN">Buy Now</a>
+        </div>
+
+         <div class="card">
+            <img src="black mythic wokong.jpg">
+            <h3>black mythic wokong</h3>
+            <p>Epic adventures of revenge </p>
+            <div class="price">$99.99</div>
+            <a class="btn" href="https://store.epicgames.com/en-US/p/black-myth-wukong-87a72b">Buy Now</a>
+        </div>
+
+         <div class="card">
+            <img src="mobile legend.jpg">
+            <h3>mobile legend bang bang </h3>
+            <p>Epic adventures of hero</p>
+            <div class="price">$70.99</div>
+            <a class="btn" href="https://www.mobilelegends.com/">Buy Now</a>
+        </div>
+
+       
+        <div class="card">
+            <img src="resident evil 4.jpg">
+            <h3>resident evil 4</h3>
+            <p>Epic adventures of zombies</p>
+            <div class="price">$78</div>
+            <a class="btn" href="https://apps.apple.com/us/app/resident-evil-4/id6462360082">Buy Now</a>
+        </div>
+        <div class="card">
+            <img src="tower of death.jpg">
+            <h3>tower of death </h3>
+            <p>Epic adventures of monsters</p>
+            <div class="price">$50</div>
+            <a class="btn" href="https://www.roblox.com/games/12235987441/TOWER-OF-DEATH">Buy Now</a>
+        </div>
+
+        <div class="card">
+            <img src="clash of clans.jpg">
+            <h3>clash of clan </h3>
+            <p> make tatic of war</p>
+            <div class="price">$39.99</div>
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans&hl=en_IN">Buy Now</a>
+        </div>
+
+         <div class="card">
+            <img src="wuthering wave.jpg">
+            <h3>wuthering waves</h3>
+            <p>open world fight advanture</p>
+            <div class="price">$109.99</div>
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.kurogame.wutheringwaves.global&hl=en_IN">Buy Now</a>
+        </div>
+
+         <div class="card">
+            <img src="marvel future fight.jpg">
+            <h3>marvel future fight </h3>
+            <p>fight with marvel HEROS</p>
+            <div class="price">$309.99</div>
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.netmarble.mherosgb&hl=en_IN">Buy Now</a>
+        </div>
+
+         <div class="card">
+            <img src="dragon ball legend.jpg">
+            <h3>DRAGON BALL LEGEND </h3>
+            <p>Epic adventures WITH GOKU </p>
+            <div class="price">$209.99</div>
+            <a class="btn" href="https://apps.apple.com/us/app/dragon-ball-legends/id1358222641">Buy Now</a>
+        </div>
+
+         <div class="card">
+            <img src="pokemon unite.jpg">
+            <h3>POKEMON UNITE</h3>
+            <p>EpiC FIGHT WITH POKEMON</p>
+            <div class="price">$39.99</div>
+            <a class="btn" href="https://www.bluestacks.com/apps/action/pokemon-unite-on-pc.html">Buy Now</a>
+        </div>
+
+         <div class="card">
+            <img src="the legend of never land.jpg">
+            <h3>THE LEGEND OF NEVER LAND</h3>
+            <p>Epic FIGHT WITH advanture</p>
+            <div class="price">$409.99</div>
+            <a class="btn" href="https://neverland.game-ark.com/en/index.html">Buy Now</a>
+        </div>
+
+         <div class="card">
+            <img src="AXES BLADE.jpg">
+            <h3>AXES BLADE</h3>
+            <p>FIGHT WITH BLADE</p>
+            <div class="price">$39.99</div>
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.awesomepiece.axisblade&hl=en_IN">Buy Now</a>
+        </div>
+
+         <div class="card">
+            <img src="far cry 4.jpg">
+            <h3>FAR CRY 4</h3>
+            <p>Epic adventures of SURVIVAL </p>
+            <div class="price">$309.99</div>
+            <a class="btn" href="https://www.playstation.com/en-in/games/far-cry-4/">Buy Now</a>
+        </div>
+        
+
+    </div>
+</div>
+
+<footer id="contact">
+    © 2026 GameVerse Store | All Rights Reserved
+    <p><strong>Email:</strong><a href="https://workspace.google.com/intl/en_in/gmail/">pradhuman.25b15410060@abes.ac.in</a></p>
+     <p><strong>Phone:</strong> 91+ 8954030198</p>
+     <P><STRONG>BRANCH: </STRONG>CSE-DS-2</P>
+</footer>
+
+</body>
+</html>
